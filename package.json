@@ -1,0 +1,33 @@
+{
+  "name": "pi-emphasis",
+  "version": "0.3.0",
+  "description": "Colored status pills with icons, labeled headings and colored bold for assistant replies in Pi's terminal, with the rules that teach the agent to write them.",
+  "license": "MIT",
+  "type": "module",
+  "keywords": ["pi-package", "pi", "markdown", "terminal", "pills"],
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/FasalZein/pi-emphasis.git"
+  },
+  "pi": {
+    "extensions": ["./index.ts"]
+  },
+  "files": ["index.ts", "reader.ts", "README.md", "LICENSE", "THIRD-PARTY-NOTICES.md", "DESIGN.md", "screenshots/"],
+  "peerDependencies": {
+    "@earendil-works/pi-coding-agent": ">=1.5.1 <2",
+    "@earendil-works/pi-tui": ">=1.5.1 <2"
+  },
+  "devDependencies": {
+    "@earendil-works/pi-coding-agent": "^1.5.0",
+    "@earendil-works/pi-tui": "1.5.2",
+    "@hegeldev/hegel": "0.5.2",
+    "bun-types": "^1.4.4",
+    "marked": "18.0.11",
+    "typescript": "^5.6.0"
+  },
+  "scripts": {
+    "test": "bun test",
+    "typecheck": "tsc --noEmit",
+    "check": "tsc --noEmit && bun test"
+  }
+}
